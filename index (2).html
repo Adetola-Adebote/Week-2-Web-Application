@@ -5,39 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adetola's Webpage</title>
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
         }
+
+        /* Header Section */
         .intro {
             background-color: skyblue;
             padding: 20px;
             text-align: center;
         }
+
+        /* Content Section */
         .content {
             background-color: lightblue;
             padding: 20px;
         }
+
+        /* Typography */
         h1, h2 {
             color: darkblue;
         }
+
         p {
             color: black;
         }
+
+        /* Images */
         img {
             display: block;
             max-width: 100%;
             height: auto;
             margin: 10px auto;
         }
+
+        /* Links */
         a {
             color: darkblue;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Desktop View (Large screens: 1024px and above) */
+        @media (min-width: 1024px) {
+            .content {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        /* Tablet View (768px - 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .content {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            ul {
+                display: block;
+            }
+        }
+
+        /* Mobile View (Less than 768px) */
+        @media (max-width: 767px) {
+            .intro {
+                padding: 15px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            img {
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -48,49 +141,38 @@
 
     <div class="content">
         <h2>About Me</h2>
-        <p>Hi, my name is Adetola, and I have a deep passion for technology and aviation. My journey has taken me through various industries—from agricultural economics to accounting, construction, and now cloud computing. While my professional focus is on cloud infrastructure, I have always been fascinated by aircraft engineering, particularly the Airbus A380.</p>
-        
+        <p>Hi, my name is Adetola, and I have a deep passion for technology and aviation. My journey has taken me through various industries—from agricultural economics to accounting, construction, and now cloud computing...</p>
+
         <h2>Why I Love the Airbus A380</h2>
-        <p>The Airbus A380 is the world's largest passenger aircraft, known for its double-deck design and advanced engineering. It can carry over 800 passengers and offers an unmatched flying experience. The level of precision and innovation required to build such an aircraft reminds me of the complexity of cloud computing—both involve intricate systems working together seamlessly.</p>
-        
+        <p>The Airbus A380 is the world's largest passenger aircraft, known for its double-deck design and advanced engineering...</p>
+
         <h3>Here is Airbus A380 exterior look</h3>
         <img src="https://www.aerotime.aero/images/airbus_a380_taxiing_at_moscow_air_show_maks_2013-800x500.jpg" alt="Airbus A380 exterior look">
-        
+
         <h2>Classes on the Airbus A380</h2>
-        <p>The Airbus A380 is designed to provide an exceptional travel experience across different classes:</p>
         <ul>
-            <li><strong>First Class</strong> – Offers private suites, luxurious seating, fine dining, and even onboard showers in some airlines.</li>
-            <li><strong>Business Class</strong> – Features lie-flat seats, extra space, and premium service, making long-haul travel comfortable.</li>
-            <li><strong>Premium Economy</strong> – Provides more legroom, enhanced meal options, and an upgraded experience compared to economy class.</li>
-            <li><strong>Economy Class</strong> – Known for its spacious seating and quiet cabin, providing a smoother flight experience compared to other aircraft.</li>
+            <li><strong>First Class</strong> – Private suites, onboard showers.</li>
+            <li><strong>Business Class</strong> – Lie-flat seats, extra space.</li>
+            <li><strong>Premium Economy</strong> – More legroom, better meals.</li>
+            <li><strong>Economy Class</strong> – Spacious seating, quieter cabin.</li>
         </ul>
-        
+
         <h3>Here is an interior look of a luxury menu with caviar in First Class</h3>
         <img src="https://media.istockphoto.com/id/2166281228/photo/luxury-passenger-menu-with-caviar-in-first-class-onboard-of-emirates-airbus-a380-airliner.jpg?s=1024x1024&w=is&k=20&c=QoydXVvAJvwh0RFBqNxBhMVBiC3uIB6GDB8ZL_u2FTg=" alt="Luxury menu in First Class">
-        
+
         <h2>Airlines That Operate the Airbus A380</h2>
-        <p>Several major airlines have incorporated the Airbus A380 into their fleets, using it for long-haul international flights:</p>
         <ul>
-            <li><strong>Emirates</strong> – The largest operator of the A380, offering luxurious first-class suites and an onboard lounge.</li>
-            <li><strong>Singapore Airlines</strong> – The launch customer of the A380, known for its exceptional service and premium cabin experience.</li>
-            <li><strong>British Airways</strong> – Uses the A380 for major routes, offering a blend of comfort and affordability.</li>
-            <li><strong>Lufthansa</strong> – A key European operator, providing a premium flying experience with a focus on efficiency.</li>
-            <li><strong>Qatar Airways</strong> – Features award-winning service and a well-designed business class onboard the A380.</li>
-            <li><strong>Qantas</strong> – The Australian flag carrier uses the A380 for long-haul routes, especially between Australia, the US, and the UK.</li>
+            <li><strong>Emirates</strong> – Largest A380 operator.</li>
+            <li><strong>Singapore Airlines</strong> – First to launch the A380.</li>
+            <li><strong>British Airways</strong> – Major routes worldwide.</li>
+            <li><strong>Lufthansa</strong> – Premium European carrier.</li>
+            <li><strong>Qatar Airways</strong> – Luxury service.</li>
+            <li><strong>Qantas</strong> – Australian flagship airline.</li>
         </ul>
-        
-        <h2>Aviation and Technology: A Fascinating Connection</h2>
-        <p>My exposure to cloud computing during the pandemic opened my eyes to how technology transforms industries, including aviation. From AI-powered air traffic control to cloud-based aircraft maintenance systems, technology plays a crucial role in ensuring safe and efficient flights. The Airbus A380 itself is a marvel of modern computing, relying on advanced software and cloud-based simulations to optimize performance.</p>
-        
-        <h2>My First Experience Seeing an Airbus A380</h2>
-        <p>I will never forget the first time I saw an Airbus A380 at an airport. Its massive size and quiet yet powerful takeoff were mesmerizing. It reminded me of the way cloud computing quietly powers many of the digital services we use daily—often unseen but incredibly impactful.</p>
-        
-        <h2>Other Aircraft and Technologies I Admire</h2>
-        <p>Beyond the Airbus A380, I am also fascinated by aircraft like the Boeing 747, a symbol of long-haul travel, and the Concorde, which revolutionized air travel with its supersonic speed. Similarly, in cloud computing, companies like AWS and GCP continue to push boundaries with new technologies that redefine how businesses operate.</p>
-        
+
         <h2>My Career Journey and Future Aspirations</h2>
-        <p>Starting with a degree in Agricultural Economics, I later moved into safety management in railway construction before discovering my passion for cloud computing. After earning certifications in AWS and GCP, I worked with AOA Windstream to build and manage cloud infrastructures. Now, as a Computer Science student, I am deepening my technical knowledge to advance in this field. Just as aviation continues to evolve, so does cloud computing—and I am excited to be part of this journey.</p>
-        
+        <p>Starting with a degree in Agricultural Economics, I later moved into safety management in railway construction before discovering my passion for cloud computing...</p>
+
         <h2>Learn More</h2>
         <p>If you’d like to know more about the Airbus A380, check out the <a href="https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a380" target="_blank">official Airbus page</a>.</p>
     </div>
